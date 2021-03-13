@@ -84,36 +84,25 @@ margin-left: 20%;
 .container2{
     border: 2px solid black;
     padding: 2%;
-    box-sizing: border-box;
     background-color: rgb(250, 226, 205);
-    /* height: 600px; */
     display: flex;
-    /* justify-content: center; */
 }
-#image1{
+.image1{
     border: 4px solid red;
-    width: 48%;
-    float: left;
-    /* flex-wrap: wrap; */
+    width: 50%;
 }
 
-#image2{
+.image2{
     border: 4px solid green;
-    width: 48%;
+    width: 50%;
     height: 100%;
-    float: left;
-    /* flex-wrap: nowrap; */
-    /* flex-wrap: wrap-reverse; */
 }
-#image3{
+/* .image3{
     border: 4px solid blue;
-    width: 48%;
-    height: 100%;
+    height: auto;
     float: left;
-    clear: image1   ;
-    /* flex-wrap: wrap; */
-    flex-wrap: wrap-reverse;
-}
+    
+} */
 #alwaysTastyBurger{
     border: 4px solid blue;
     display: inline-block;
@@ -124,7 +113,7 @@ margin-left: 20%;
     border: 2px solid green;
     padding: 2px;
     margin-top: 4%;
-    height: 520px;
+    /* height: 520px; */
     text-align: center;
     display: flex;
     justify-content: center;
@@ -141,6 +130,7 @@ margin-left: 20%;
 .image5{
     border: 4px solid green;
     width: 32%;
+    height: auto;
     /* float: left; */
 }
 .image5 img{
@@ -149,6 +139,7 @@ margin-left: 20%;
 .image6{
     border: 4px solid blue;
     width: 32%;
+    height: auto;
     /* float: left; */
     /* clear: image1   ; */
 }
@@ -171,7 +162,7 @@ a{
     cursor: pointer;
   }
 
-  .button1 {
+  /* .button1 {
     background-color: white; 
     color: black; 
     border: 2px solid #4CAF50;
@@ -181,14 +172,37 @@ a{
     background-color: #4CAF50;
     color: white;
   }
-  #hotelName{
+ */
+ #hotelName{
     border: 4px solid blue;
     display: inline-block;
     margin-left: 40%;
     margin-top: 4%;
 }
-
-
+.button1{
+    width: 200px;
+    height: 50px;
+    background-color: brown;
+    color: white;
+    font-size: 20px;
+    box-shadow: 4px 4px lightgrey;
+    border-radius: 6px;
+    
+}
+/* a{
+    display: block;
+    text-align: center;
+    padding: 10px;
+    text-decoration: none;
+    width: 200px;
+    height: 50px;
+    background-color: brown;
+    color: white;
+    font-size: 20px;
+    box-shadow: 4px 4px lightgrey;
+    border-radius: 6px;
+    
+} */
 
 footer{
     background: black;
@@ -198,3 +212,20 @@ footer{
 .center{
     text-align: center;
 }
+
+/* .container2{
+    background-color: royalblue;
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr;
+}
+.image1{
+    border: 2px solid green;
+}
+.image2{
+    height: 50%;
+    width: 100%;
+}
+.image3{
+    height: 50%;
+    width: 100%;
+} */
