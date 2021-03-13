@@ -1,0 +1,200 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    width: 100%;
+    margin: 0%;
+    padding: 0%;
+}
+#logo{
+    margin: 10px 34px;
+}
+
+#logo img{
+    height: 59px;
+    margin: 3px 6px;
+}
+/*  Navigation Bar */
+#navbar{
+    border: 2px solid rgb(255, 0, 221);
+    background-color: blue;
+    display: flex;
+    align-items: center;
+}
+#navbar ul{
+    display: flex;
+    padding: 4px;
+border: 2px dashed black;
+margin-left: 20%;
+}
+#navbar ul li{ 
+    list-style: none;
+    font-size: 1.3rem;
+}
+
+#navbar ul li a{
+    color: white;
+    display: block;
+    padding: 3px 22px;
+    border-radius: 20px;
+    text-decoration: none;
+}
+
+#navbar ul li a:hover{
+    color: black;
+    background-color: white;
+}
+
+/* Container */
+.container1{
+    border: 4px dotted yellow;
+    background-color: blue;
+    display: flex;
+    justify-content: center;
+}
+#leftBox{
+    border: 2px solid red;
+    margin: 6%;
+    width: 40%;
+    /* margin: auto; */
+}
+#leftBox p{
+    margin: 0%;
+    padding: 5%;
+    font-size: 1.5rem;
+    text-align: center;
+}
+#leftBox h1{
+    text-align: center;
+    font-size: 4rem;
+    /* padding: 10%; */
+}
+#leftBox h2{
+    text-align: center;
+    font-size: 3rem;
+    /* padding: 10%; */
+}
+#rightBox{
+    border: 2px solid black;
+    /* margin: 10%; */
+    /* margin-left: 5%; */
+    margin: auto;
+    height: auto;
+}
+.container2{
+    border: 2px solid black;
+    padding: 2%;
+    box-sizing: border-box;
+    background-color: rgb(250, 226, 205);
+    /* height: 600px; */
+    display: flex;
+    /* justify-content: center; */
+}
+#image1{
+    border: 4px solid red;
+    width: 48%;
+    float: left;
+    /* flex-wrap: wrap; */
+}
+
+#image2{
+    border: 4px solid green;
+    width: 48%;
+    height: 100%;
+    float: left;
+    /* flex-wrap: nowrap; */
+    /* flex-wrap: wrap-reverse; */
+}
+#image3{
+    border: 4px solid blue;
+    width: 48%;
+    height: 100%;
+    float: left;
+    clear: image1   ;
+    /* flex-wrap: wrap; */
+    flex-wrap: wrap-reverse;
+}
+#alwaysTastyBurger{
+    border: 4px solid blue;
+    display: inline-block;
+    margin-left: 40%;
+    margin-top: 4%;
+}
+.container3{
+    border: 2px solid green;
+    padding: 2px;
+    margin-top: 4%;
+    height: 520px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+}
+.image4{
+    border: 4px solid red;
+    width: 32%;
+    height: auto;
+    /* float: left; */
+}
+.image4 img{
+    height: auto;
+}
+.image5{
+    border: 4px solid green;
+    width: 32%;
+    /* float: left; */
+}
+.image5 img{
+    height: auto;
+}
+.image6{
+    border: 4px solid blue;
+    width: 32%;
+    /* float: left; */
+    /* clear: image1   ; */
+}
+.image6 img{
+    height: auto;
+}
+a{
+    color: black;
+}
+.button {
+    border: none;
+    color: white;
+    padding: 26px 42px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+  }
+
+  .button1 {
+    background-color: white; 
+    color: black; 
+    border: 2px solid #4CAF50;
+  }
+  
+  .button1:hover {
+    background-color: #4CAF50;
+    color: white;
+  }
+  #hotelName{
+    border: 4px solid blue;
+    display: inline-block;
+    margin-left: 40%;
+    margin-top: 4%;
+}
+
+
+
+footer{
+    background: black;
+    color: white;
+    padding: 9px 20px;
+}
+.center{
+    text-align: center;
+}
