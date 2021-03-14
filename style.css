@@ -5,13 +5,14 @@ body{
     width: 100%;
     margin: 0%;
     padding: 0%;
+
 }
 #logo{
     margin: 10px 34px;
 }
 
 #logo img{
-    height: 59px;
+    height: 60px;
     margin: 3px 6px;
 }
 /*  Navigation Bar */
@@ -20,12 +21,16 @@ body{
     background-color: blue;
     display: flex;
     align-items: center;
+    /* background: url(NavBG.jpg); */
+    background-color: goldenrod;
+    
 }
 #navbar ul{
     display: flex;
     padding: 4px;
-border: 2px dashed black;
-margin-left: 20%;
+    border: 2px dashed black;
+    /* margin-left: 20%; */
+    font-family: 'Baloo Bhai', cursive;
 }
 #navbar ul li{ 
     list-style: none;
@@ -39,7 +44,6 @@ margin-left: 20%;
     border-radius: 20px;
     text-decoration: none;
 }
-
 #navbar ul li a:hover{
     color: black;
     background-color: white;
@@ -48,14 +52,17 @@ margin-left: 20%;
 /* Container */
 .container1{
     border: 4px dotted yellow;
-    background-color: blue;
+    background-color: goldenrod;
     display: flex;
     justify-content: center;
 }
 #leftBox{
     border: 2px solid red;
     margin: 6%;
-    width: 40%;
+    width: 30%;
+    /* animation-name: ronit;
+    animation-duration: 8s;
+    animation-iteration-count: infinite; */
     /* margin: auto; */
 }
 #leftBox p{
@@ -63,16 +70,119 @@ margin-left: 20%;
     padding: 5%;
     font-size: 1.5rem;
     text-align: center;
+
 }
 #leftBox h1{
     text-align: center;
     font-size: 4rem;
+    animation-name: ronit1;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
     /* padding: 10%; */
+}
+@keyframes ronit1 {
+    0%{
+        color: red;
+       
+    }
+    25%{
+        color:blue;
+
+    }
+    75%{
+       color: chartreuse;
+    }
+    100%{
+       color: cyan;
+    }
+    
 }
 #leftBox h2{
     text-align: center;
     font-size: 3rem;
+    animation-name: ronit2;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
     /* padding: 10%; */
+}
+@keyframes ronit2 {
+    0%{
+        color:cyan;
+    }
+    25%{
+        color:red
+    }
+    75%{
+       color: blue;
+    }
+    100%{
+       color: chartreuse;
+    }
+    
+}
+.midBox{
+    width: auto;
+    height: auto;
+    /* border: 2px solid green; */
+    margin: auto;
+    background: none;
+    /* background-color: green; */
+}
+.midBox h1{
+    color: white;
+    font-family: 'Heebo', sans-serif;
+    width: 100%;
+    display: inline-block;
+    font-size: 40px;
+    border-bottom: 5px solid purple;
+    margin-bottom: 15px;
+    padding: 13px 0;
+}
+.box{
+    width: 100%; 
+    margin: 22px 0px;
+    border-bottom: 2px solid purple;
+}
+.box input{
+    background: none;
+    width: 75%;
+    padding: 5px 10px;
+    font-size: 20px;
+    border: none;
+    outline:none;
+    color: white;
+}
+.box i{ 
+    width: 25px; 
+    text-align: center;
+}
+.btn{
+    color: white;
+    cursor: pointer;
+    outline: none; 
+    margin: -5px 0;
+    padding: 10px 21px;
+    /* border: 2px solid purple; */
+    border-radius: 10px;
+    font-size: 18px;
+    background: none;
+    font-weight: bold;
+}
+.btn:hover{
+    /* opacity: 0.5; */
+    color: black; 
+    background: white; 
+    
+}
+.box1{
+    /* border: 2px solid black; */
+    padding: 0px;
+    margin: 0px;
+}
+.box1 p a {
+    font-family: 'Heebo', sans-serif;
+    text-decoration: none;
+    font-size: 1.3rem;
 }
 #rightBox{
     border: 2px solid black;
@@ -87,63 +197,54 @@ margin-left: 20%;
     background-color: rgb(250, 226, 205);
     display: flex;
 }
-.image1{
+.container2Box1{
     border: 4px solid red;
     width: 50%;
+    margin-right: 6px;
+    margin-top: 6px;
+    margin-bottom: 6px;
 }
 
-.image2{
+.container2Box2{
     border: 4px solid green;
     width: 50%;
     height: 100%;
+    margin-left: 6px;
 }
-/* .image3{
-    border: 4px solid blue;
-    height: auto;
-    float: left;
-    
-} */
+.container2Box2 img{
+    margin-top: 6px;
+    margin-bottom: 6px;
+}
 #alwaysTastyBurger{
     border: 4px solid blue;
     display: inline-block;
-    margin-left: 40%;
-    margin-top: 4%;
+    /* margin-left: 40%; */
+    /* margin-top: 1%; */
+    /* margin: auto; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2rem;
+    
+}
+#alwaysTastyBurger h2:hover{
+    color: red;
 }
 .container3{
     border: 2px solid green;
     padding: 2px;
-    margin-top: 4%;
+    margin-top: 2%;
     /* height: 520px; */
     text-align: center;
     display: flex;
     justify-content: center;
 }
-.image4{
+.container3Box{
     border: 4px solid red;
     width: 32%;
     height: auto;
-    /* float: left; */
 }
-.image4 img{
-    height: auto;
-}
-.image5{
-    border: 4px solid green;
-    width: 32%;
-    height: auto;
-    /* float: left; */
-}
-.image5 img{
-    height: auto;
-}
-.image6{
-    border: 4px solid blue;
-    width: 32%;
-    height: auto;
-    /* float: left; */
-    /* clear: image1   ; */
-}
-.image6 img{
+.container3Box img{
     height: auto;
 }
 a{
@@ -160,19 +261,10 @@ a{
     margin: 4px 2px;
     transition-duration: 0.4s;
     cursor: pointer;
+    
   }
 
-  /* .button1 {
-    background-color: white; 
-    color: black; 
-    border: 2px solid #4CAF50;
-  }
-  
-  .button1:hover {
-    background-color: #4CAF50;
-    color: white;
-  }
- */
+ 
  #hotelName{
     border: 4px solid blue;
     display: inline-block;
@@ -189,20 +281,27 @@ a{
     border-radius: 6px;
     
 }
-/* a{
+ .container3Box a{
     display: block;
     text-align: center;
-    padding: 10px;
+    padding: 0 px;
     text-decoration: none;
-    width: 200px;
-    height: 50px;
-    background-color: brown;
+    width: 100px;
+    height: 40px;
+    background-color: rgb(223, 6, 6);
     color: white;
     font-size: 20px;
-    box-shadow: 4px 4px lightgrey;
+    /* box-shadow: 4px 4px lightgrey; */
     border-radius: 6px;
+    margin: auto;
+    font-family: 'Baloo Bhai', cursive;
     
-} */
+} 
+.container3Box a:hover{
+    background-color: rgba(255, 255, 255, 0.431);
+    color: black;
+    box-shadow: 4px 4px grey;
+}
 
 footer{
     background: black;
