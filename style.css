@@ -7,25 +7,49 @@ body{
     padding: 0%;
 
 }
-#logo{
-    margin: 10px 34px;
-}
 
-#logo img{
-    height: 60px;
-    margin: 3px 6px;
-}
 /*  Navigation Bar */
 #navbar{
     border: 2px solid rgb(255, 0, 221);
     background-color: blue;
     display: flex;
     align-items: center;
+    justify-content: center;
     /* background: url(NavBG.jpg); */
     background-color: goldenrod;
+    /* position: fixed; */
     
 }
+#logo{
+    margin: 10px 34px;
+    width: 10%;
+}
+
+#logo img{
+    height: 60px;
+    margin: 3px 6px;
+}
+#CompanyName{
+    display: flex;
+    border: 2px solid black;
+    width: 20%;
+    padding:0;
+}
+#CompanyName h2{
+    margin-right: 2%;
+    font-size: 2.5rem;
+    font-family: 'UnifrakturMaguntia', cursive;
+    margin: 10px;
+}
+#CompanyName h3{
+    margin-right: 2%;
+    font-size: 1.5rem;
+    font-family: 'Montez', cursive;
+    margin: 0;
+}
 #navbar ul{
+    margin: 10px 20px;
+    width: 70%;
     display: flex;
     padding: 4px;
     border: 2px dashed black;
@@ -51,13 +75,13 @@ body{
 
 /* Container */
 .container1{
-    border: 4px dotted yellow;
+    /* border: 4px dotted yellow; */
     background-color: goldenrod;
     display: flex;
     justify-content: center;
 }
 #leftBox{
-    border: 2px solid red;
+    /* border: 2px solid red; */
     margin: 6%;
     width: 30%;
     /* animation-name: ronit;
@@ -68,6 +92,7 @@ body{
 #leftBox p{
     margin: 0%;
     padding: 5%;
+    font-family: 'Satisfy', cursive;
     font-size: 1.5rem;
     text-align: center;
 
@@ -75,8 +100,9 @@ body{
 #leftBox h1{
     text-align: center;
     font-size: 4rem;
+    font-family: 'Redressed', cursive;
     animation-name: ronit1;
-    animation-duration: 4s;
+    animation-duration: 2s;
     animation-iteration-count: infinite;
     /* padding: 10%; */
 }
@@ -100,8 +126,9 @@ body{
 #leftBox h2{
     text-align: center;
     font-size: 3rem;
+    font-family: 'Ravi Prakash', cursive;
     animation-name: ronit2;
-    animation-duration: 4s;
+    animation-duration: 3s;
     animation-iteration-count: infinite;
     /* padding: 10%; */
 }
@@ -133,15 +160,15 @@ body{
     font-family: 'Heebo', sans-serif;
     width: 100%;
     display: inline-block;
-    font-size: 40px;
-    border-bottom: 5px solid purple;
+    font-size: 30px;
+    border-bottom: 3px solid silver;
     margin-bottom: 15px;
     padding: 13px 0;
 }
 .box{
     width: 100%; 
     margin: 22px 0px;
-    border-bottom: 2px solid purple;
+    border-bottom: 2px solid silver;
 }
 .box input{
     background: none;
@@ -181,24 +208,25 @@ body{
 }
 .box1 p a {
     font-family: 'Heebo', sans-serif;
+    color: whitesmoke ;
     text-decoration: none;
     font-size: 1.3rem;
 }
 #rightBox{
-    border: 2px solid black;
+    /* border: 2px solid black; */
     /* margin: 10%; */
     /* margin-left: 5%; */
     margin: auto;
     height: auto;
 }
 .container2{
-    border: 2px solid black;
+    /* border: 2px solid black; */
     padding: 2%;
-    background-color: rgb(250, 226, 205);
+    /* background-color: rgb(250, 226, 205); */
     display: flex;
 }
 .container2Box1{
-    border: 4px solid red;
+    /* border: 4px solid red; */
     width: 50%;
     margin-right: 6px;
     margin-top: 6px;
@@ -206,7 +234,7 @@ body{
 }
 
 .container2Box2{
-    border: 4px solid green;
+    /* border: 4px solid green; */
     width: 50%;
     height: 100%;
     margin-left: 6px;
@@ -216,7 +244,8 @@ body{
     margin-bottom: 6px;
 }
 #alwaysTastyBurger{
-    border: 4px solid blue;
+    /* border: 4px solid blue; */
+    font-family: 'Rock Salt', cursive;
     display: inline-block;
     /* margin-left: 40%; */
     /* margin-top: 1%; */
@@ -224,14 +253,14 @@ body{
     display: flex;
     align-items: center;
     justify-content: center;
-    font-size: 2rem;
+    font-size: 1.2rem;
     
 }
 #alwaysTastyBurger h2:hover{
     color: red;
 }
 .container3{
-    border: 2px solid green;
+    /* border: 2px solid green; */
     padding: 2px;
     margin-top: 2%;
     /* height: 520px; */
@@ -240,7 +269,7 @@ body{
     justify-content: center;
 }
 .container3Box{
-    border: 4px solid red;
+    /* border: 4px solid red; */
     width: 32%;
     height: auto;
 }
@@ -266,10 +295,16 @@ a{
 
  
  #hotelName{
-    border: 4px solid blue;
+    /* border: 4px solid blue; */
     display: inline-block;
-    margin-left: 40%;
-    margin-top: 4%;
+    /* margin-left: 40%;
+    margin-top: 4%; */
+    display: flex;
+    align-items: center;
+   
+    justify-content: center;
+     font-size: 2rem;
+    font-family: 'Frijole', cursive;
 }
 .button1{
     width: 200px;
@@ -303,14 +338,7 @@ a{
     box-shadow: 4px 4px grey;
 }
 
-footer{
-    background: black;
-    color: white;
-    padding: 9px 20px;
-}
-.center{
-    text-align: center;
-}
+
 
 /* .container2{
     background-color: royalblue;
@@ -328,3 +356,208 @@ footer{
     height: 50%;
     width: 100%;
 } */
+
+/* Slideshow container */
+.slideshow-container {
+    max-width: 1000px;
+    position: relative;
+    margin: auto;
+  }
+  
+  /* Hide the images by default */
+  .mySlides {
+    display: none;
+  }
+  
+  /* Next & previous buttons */
+  .prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+  }
+  
+  /* Position the "next button" to the right */
+  .next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+  }
+  
+  /* On hover, add a black background color with a little bit see-through */
+  .prev:hover, .next:hover {
+    background-color: rgba(0,0,0,0.8);
+  }
+  
+  /* Caption text */
+  .text {
+    color: #f2f2f2;
+    font-size: 15px;
+    padding: 8px 12px;
+    position: absolute;
+    bottom: 8px;
+    width: 100%;
+    text-align: center;
+  }
+  
+  /* Number text (1/3 etc) */
+  .numbertext {
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+  }
+  
+  /* The dots/bullets/indicators */
+  .dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+  }
+  
+  .active, .dot:hover {
+    background-color: #717171;
+  }
+  
+  /* Fading animation */
+  .fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+  }
+  
+  @-webkit-keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+  }
+  
+  @keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+  }
+
+  .BookTableContainer{
+      border: 2px solid red;
+      padding: 4px;
+
+  }
+  footer{
+    background: black;
+    color: white;
+    /* padding: 9px 20px; */
+    padding: 0%;
+    padding-bottom: 5%;
+    margin-top: 5%;
+}
+.center{
+    padding-top: 2%;
+    text-align: center;
+    font-size: 1.5rem;
+}
+  
+  #AboutUs{
+      border: 2px solid white;
+      display: flex;
+      /* background-color: rgba(128, 128, 128, 0.425); */
+      background: url(Hotel/hotel4.jpg);
+      
+      
+      
+      margin: 0;
+  }
+  #AboutUS img{
+      opacity: 0.6;
+  }
+  .myName{
+      /* border: 2px solid yellow; */
+      /* float: left; */
+      margin: auto;
+      font-family: 'Charmonman', cursive;
+      text-align: center;
+      width: 25%;
+      
+  }
+  .Address{
+      /* border: 2px solid cyan; */
+      width: 40%;
+      padding-left: 10%;
+      margin-top: 1%;
+      /* padding-right: 10%; */
+  }
+  .Address p{
+      color: gold;
+      padding: 2px;
+      margin: 2px;
+  }
+  .AddressHeading h4{
+      margin: 0px;
+      /* border: 2px solid white; */
+      padding: 0px;
+      color: red;
+      font-family: 'Vidaloka', serif;
+  }
+  .SocialLink{
+    /* border: 2px solid green; */
+    float: right;
+    width: 35%;
+    display: inline-block;
+    margin: auto;
+    margin-left: 5%;
+    margin-right: 5%;
+  }
+  .fa {
+    padding: 10px;
+    font-size: 30px;
+    width: 50px;
+    text-align: center;
+    text-decoration: none;
+    margin: 5px 10px;
+  }
+  
+  .fa:hover {
+      opacity: 0.7;
+  }
+  
+  .fa-facebook {
+    background: #3B5998;
+    color: white;
+  }
+  
+  .fa-twitter {
+    background: #55ACEE;
+    color: white;
+  }
+  
+  .fa-google {
+    background: #dd4b39;
+    color: white;
+  }
+  
+  .fa-linkedin {
+    background: #007bb5;
+    color: white;
+  }
+  
+  .fa-youtube {
+    background: #bb0000;
+    color: white;
+  }
+  
+  .fa-instagram {
+    background: #125688;
+    color: white;
+  }

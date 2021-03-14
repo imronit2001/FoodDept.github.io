@@ -5,7 +5,20 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://kit.fontawesome.com/433888fe69.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css2?family=UnifrakturMaguntia&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montez&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Baloo+Bhai|Bree+Serif&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Redressed&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Ravi+Prakash&family=Redressed&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Satisfy&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Rock+Salt&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Frijole&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link href="https://fonts.googleapis.com/css2?family=Charmonman&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Vidaloka&display=swap" rel="stylesheet">
+
     <link rel="stylesheet" href="style.css">
     <title>Home</title>
 </head>
@@ -14,10 +27,14 @@
         <div id="logo">
             <img src="logo.jpg" alt="MyOnlineMeal.com">
         </div>
+        <div id="CompanyName">
+            <h2>Ronit </h2>
+            <h3> Food Plaza</h3>
+        </div>
         <ul>
             <li class="item"><a href="#">Home</a></li>
             <li class="item"><a href="#alwaysTastyBurger">Services</a></li>
-            <li class="item"><a href="#">About Us</a></li>
+            <li class="item"><a href="#AboutUs">About Us</a></li>
             <li class="item"><a href="#">Contact Us</a></li> 
         </ul>
     </nav>
@@ -124,12 +141,102 @@
         </div>
     </section>
     <h2 id="hotelName">Air Conditioning Restuarant</h2>
+    <section>
+                <!-- Slideshow container -->
+        <div class="slideshow-container">
 
+            <!-- Full-width images with number and caption text -->
+            <div class="mySlides fade">
+            <div class="numbertext">1 / 3</div>
+            <img src="Hotel/hotelcover.jpg" style="width:100%">
+            <div class="text">Caption Text</div>
+            </div>
+        
+            <div class="mySlides fade">
+            <div class="numbertext">2 / 3</div>
+            <img src="Hotel/hotel1.jpg" style="width:100%">
+            <div class="text">Caption Two</div>
+            </div>
+        
+            <div class="mySlides fade">
+            <div class="numbertext">3 / 3</div>
+            <img src="Hotel/hotel2.jpg" style="width:100%">
+            <div class="text">Caption Three</div>
+            </div>
+        
+            <!-- Next and previous buttons -->
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+        </div>
+        <br>
+        
+        <!-- The dots/circles -->
+        <div style="text-align:center">
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
+        </div>
+    </section>
+    <section>
+        <div class="BookTableContainer">
+
+        </div>
+    </section>
     <footer>
+        <div id="AboutUs">
+            <div class="myName">
+                <h1>Ronit Singh</h1>
+                <h3>Bachelor of Computer Application</h3>
+            </div>
+            <div class="Address">
+                <div class="AddressHeading">
+                    <!-- <h4>BARRACKPUR</h4> -->
+                </div>
+                <div class="AddressHeading">
+                    <h4>ADDRESS</h4>
+                </div>
+                <p>
+                    Premise No 18 & 16, Ghosh Para Road
+                    Barrackpore,
+                    North 24 Parganas - 700120
+                </p>
+                <div class="AddressHeading">
+                    <h4>PHONE NUMBER</h4>
+                </div>
+                    <p>+918042754444 </p>
+                <div class="AddressHeading">
+                    <h4>STORE TIMING</h4>
+                </div>
+                    <p>Open until 11:00 PM</p>
+            </div>
+            <div class="SocialLink">
+                <a href="#" class="fa fa-facebook"></a>
+                <a href="#" class="fa fa-twitter"></a>
+                <a href="#" class="fa fa-linkedin"></a>
+                <a href="#" class="fa fa-youtube"></a>
+                <a href="#" class="fa fa-instagram"></a>
+            </div>  
+        </div>
         <div class="center">
             Copyright &copy; www.myOnlineMeal.com. All rights reserved! <br>
-            <i>This webpage is designed by Ronit Singh</i>
+            <i>This webpage is designed by </i><b>Ronit Singh</b>
         </div>
     </footer>
 </body>
+<script>
+    var slideIndex = 0;
+showSlides();
+
+function showSlides() {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+  slideIndex++;
+  if (slideIndex > slides.length) {slideIndex = 1}
+  slides[slideIndex-1].style.display = "block";
+  setTimeout(showSlides, 2000); // Change image every 2 seconds
+}
+</script>
 </html>
