@@ -10,61 +10,147 @@ body{
 
 /*  Navigation Bar */
 #navbar{
-    border: 2px solid rgb(255, 0, 221);
-    background-color: blue;
+    /* border: 2px solid rgb(255, 0, 221); */
     display: flex;
     align-items: center;
     justify-content: center;
-    /* background: url(NavBG.jpg); */
     background-color: goldenrod;
-    /* position: fixed; */
     
 }
 #logo{
-    margin: 10px 34px;
+    /* border: 2px solid crimson; */
+    margin: 0% 2%;
     width: 10%;
 }
 
 #logo img{
-    height: 60px;
-    margin: 3px 6px;
+    height: 80px;
+    margin: auto;
 }
 #CompanyName{
     display: flex;
-    border: 2px solid black;
-    width: 20%;
+    /* border: 2px solid black; */
     padding:0;
+    width: 20%;
 }
+
 #CompanyName h2{
     margin-right: 2%;
-    font-size: 2.5rem;
+    font-size: 4vw;
     font-family: 'UnifrakturMaguntia', cursive;
     margin: 10px;
+    animation-name: OnH2;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+}
+@keyframes OnH2 {
+    0%{
+        color: red;
+       
+    }
+    20%{
+        color:rgb(0, 255, 42);
+
+    }
+    40%{
+       color: rgba(0, 140, 255, 0.822);
+    }
+    60%{
+       color: rgb(255, 0, 200);
+    }
+    80%{
+        color:blue;
+    }
+    100%{
+        color: cyan;
+    }
 }
 #CompanyName h3{
     margin-right: 2%;
-    font-size: 1.5rem;
+    font-size: 3vw;
     font-family: 'Montez', cursive;
     margin: 0;
+    animation-name: OnH3;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+}
+@keyframes OnH3 {
+    0%{
+        color: red;
+       
+    }
+    20%{
+        color: chartreuse;
+
+    }
+    40%{
+       color: rgb(0, 174, 255);
+    }
+    60%{
+       color: cyan;
+    }
+    80%{
+        color: rgb(134, 0, 0);
+    }
+    100%{
+        color:blue;
+    }
 }
 #navbar ul{
-    margin: 10px 20px;
-    width: 70%;
+    /* border: 2px dashed black; */
+    margin: auto;
+    padding: 1px;
     display: flex;
-    padding: 4px;
-    border: 2px dashed black;
-    /* margin-left: 20%; */
     font-family: 'Baloo Bhai', cursive;
+    width: 70%;
 }
 #navbar ul li{ 
     list-style: none;
-    font-size: 1.3rem;
+    font-size: 2vw;
+    /* border: 2px solid black; */
+    width: 25%;
+    text-align: center;
+    margin: 0%;
+    padding: 0%;
 }
-
+/* Media Quary on Navbar */
+@media screen and (max-width:1050px){
+    #logo{
+        margin: 0;
+        height: 50%;
+    }
+    #logo img{
+        height: 60px;
+    }
+    #CompanyName h2{
+        margin: 0%;
+        font-size: 6vw;
+    }
+    #CompanyName h3{
+        margin: 0%;
+        font-size: 4vw;
+    }
+    #navbar ul{
+        margin: 0%;
+    }
+    #navbar ul li{
+        padding: 0%;
+        font-size: 2.5vw;
+    }
+}
+@media screen and (max-width:700px){
+    #logo{
+        margin: 0;
+        height: 50%;
+    }
+    #logo img{
+        height: 40px;
+    }
+}
 #navbar ul li a{
     color: white;
     display: block;
-    padding: 3px 22px;
+    /* padding: 3px 22px; */
     border-radius: 20px;
     text-decoration: none;
 }
@@ -78,17 +164,16 @@ body{
     /* border: 4px dotted yellow; */
     background-color: goldenrod;
     display: flex;
+    align-items: center;
     justify-content: center;
 }
 #leftBox{
     /* border: 2px solid red; */
-    margin: 6%;
+    margin: 6% 0%;
     width: 30%;
-    /* animation-name: ronit;
-    animation-duration: 8s;
-    animation-iteration-count: infinite; */
-    /* margin: auto; */
+    padding: 0% 2%;
 }
+
 #leftBox p{
     margin: 0%;
     padding: 5%;
@@ -104,7 +189,6 @@ body{
     animation-name: ronit1;
     animation-duration: 2s;
     animation-iteration-count: infinite;
-    /* padding: 10%; */
 }
 @keyframes ronit1 {
     0%{
@@ -130,7 +214,6 @@ body{
     animation-name: ronit2;
     animation-duration: 3s;
     animation-iteration-count: infinite;
-    /* padding: 10%; */
 }
 @keyframes ronit2 {
     0%{
@@ -148,12 +231,13 @@ body{
     
 }
 .midBox{
-    width: auto;
     height: auto;
     /* border: 2px solid green; */
-    margin: auto;
     background: none;
-    /* background-color: green; */
+    margin: 6% 0%;
+    width: 30%;
+    padding: 0% 2%;
+
 }
 .midBox h1{
     color: white;
@@ -183,29 +267,48 @@ body{
     width: 25px; 
     text-align: center;
 }
+.box1{
+    /* border: 2px solid black; */
+    padding: 0px;
+    margin: 0px;display: flex;
+    align-items: center;
+    justify-content: center;
+}
 .btn{
     color: white;
     cursor: pointer;
     outline: none; 
     margin: -5px 0;
     padding: 10px 21px;
-    /* border: 2px solid purple; */
+    border: 2px solid purple;
     border-radius: 10px;
     font-size: 18px;
     background: none;
     font-weight: bold;
+    width: 50%;
 }
 .btn:hover{
-    /* opacity: 0.5; */
     color: black; 
     background: white; 
+    box-shadow: 4px 6px grey;
     
 }
-.box1{
-    /* border: 2px solid black; */
-    padding: 0px;
-    margin: 0px;
-}
+/* Set a style for all buttons */
+.box1 button {
+    background-color: #04AA6D;
+    /* color: white; */
+    /* background: transparent; */
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 50%;
+    /* opacity: 0.9; */
+  }
+  
+  .box1 button:hover {
+    opacity:1;
+  }
 .box1 p a {
     font-family: 'Heebo', sans-serif;
     color: whitesmoke ;
@@ -214,15 +317,73 @@ body{
 }
 #rightBox{
     /* border: 2px solid black; */
-    /* margin: 10%; */
-    /* margin-left: 5%; */
-    margin: auto;
+    margin: 6% 0%;
+    width: 30%;
+    padding: 0% 2%;
     height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+@media screen and (max-width:1050px){
+    #leftBox{
+        width: 60%;
+        /* margin: 10%; */
+    }
+    #leftBox h1{
+        font-size: 6rem;
+    }
+    #leftBox h2{
+        font-size: 5rem;
+        animation-name: LeftBoxH2;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+}
+@keyframes LeftBoxH2 {
+    0%{
+        color:cyan;
+        
+    }
+    25%{
+        color:red
+    }
+    75%{
+       color: blue;
+    }
+    100%{
+       color: chartreuse;
+    }
+    
+}
+    .midBox{
+        width: 60%;
+    }
+    #rightBox{
+        width: 80%;
+    }
+    .container2{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+}
+@media screen and (max-width:700px){
+    #leftBox{
+        width: 80%;
+        /* border: 2px solid black; */
+    }
+    .midBox{
+        width: 80%;
+        margin: 6%;
+    }
+    #rightBox{
+        width: 80%;
+    }
 }
 .container2{
     /* border: 2px solid black; */
     padding: 2%;
-    /* background-color: rgb(250, 226, 205); */
     display: flex;
 }
 .container2Box1{
@@ -247,14 +408,31 @@ body{
     /* border: 4px solid blue; */
     font-family: 'Rock Salt', cursive;
     display: inline-block;
-    /* margin-left: 40%; */
-    /* margin-top: 1%; */
-    /* margin: auto; */
     display: flex;
     align-items: center;
     justify-content: center;
     font-size: 1.2rem;
-    
+    animation-name: alwaysTastyBurger;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+}
+@keyframes alwaysTastyBurger {
+    0%{
+        color: #dd4b39;
+        
+    }
+    25%{
+        color: chartreuse;
+    }
+    50%{
+        color: cyan;
+    }
+    75%{
+        color: blue;
+    }
+    100%{
+        color: gold;
+    }
 }
 #alwaysTastyBurger h2:hover{
     color: red;
@@ -263,14 +441,17 @@ body{
     /* border: 2px solid green; */
     padding: 2px;
     margin-top: 2%;
-    /* height: 520px; */
     text-align: center;
     display: flex;
+    /* align-items: center; */
     justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
 }
 .container3Box{
     /* border: 4px solid red; */
-    width: 32%;
+    width: 30%;
+    margin: auto;
     height: auto;
 }
 .container3Box img{
@@ -278,6 +459,16 @@ body{
 }
 a{
     color: black;
+}
+@media screen and (max-width:1030px){
+    .container3Box{
+        width: 40%;
+    }
+}
+@media screen and (max-width:600px){
+    .container3Box{
+        width: 60%;
+    }
 }
 .button {
     border: none;
@@ -297,14 +488,31 @@ a{
  #hotelName{
     /* border: 4px solid blue; */
     display: inline-block;
-    /* margin-left: 40%;
-    margin-top: 4%; */
     display: flex;
     align-items: center;
-   
     justify-content: center;
-     font-size: 2rem;
+     font-size: 4.5vw;
     font-family: 'Frijole', cursive;
+    animation-name: hotelName;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+}
+@keyframes hotelName{
+    0%{
+        color: #dff800;
+    }
+    25%{
+        color: rgb(0, 17, 255);
+    }
+    50%{
+        color: rgb(255, 0, 221);
+    }
+    75%{
+        color: rgb(0, 255, 234);
+    }
+    100%{
+        color: rgb(253, 0, 84);
+    }
 }
 .button1{
     width: 200px;
@@ -451,26 +659,151 @@ a{
   }
 
   .BookTableContainer{
-      border: 2px solid red;
+      /* border: 2px solid red; */
       padding: 4px;
-
+      background-color: blanchedalmond;
   }
+  #BookTable{
+    /* border: 4px solid blue; */
+    display: inline-block;
+    /* margin-left: 40%;
+    margin-top: 4%; */
+    display: flex;
+    align-items: center;
+   /* border: 2px solid black; */
+    justify-content: center;
+     font-size: 2rem;
+    font-family: 'Frijole', cursive;
+    animation-name: BookTable;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+}
+@keyframes BookTable {
+    0%{
+        color: #83dd39;
+        
+    }
+    25%{
+        color: rgb(0, 26, 255);
+    }
+    50%{
+        color: rgb(255, 0, 0);
+    }
+    75%{
+        color: blue;
+    }
+    100%{
+        color: gold;
+    }
+}
+table{
+    /* align-items: center; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem;
+}
+table tr{
+    text-align: left;
+}
+table input{
+    background: #fdf7f7;
+    width: 75%;
+    padding: 5px 10px;
+    font-size: 20px;
+    border: none;
+    outline:none;
+    /* color: white; */
+    border-bottom: 1px solid blue;
+    color: #060606b0;
+    margin: 4px;
+}
+table input:hover{
+    background: #e2e2e2;
+}
+#date{
+    color: #060606b0;
+}
+#time{
+    background: #fdf7f7;
+    width: 75%;
+    padding: 5px 10px;
+    font-size: 20px;
+    border: none;
+    outline:none;
+    /* color: white; */
+    border-bottom: 1px solid blue;
+    color: #060606b0;
+    margin: 4px;
+}
+#time:hover{
+    background: #e2e2e2;
+}
+#BookNow{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.BookButton{
+    color: #060606b0;
+    cursor: pointer;
+    outline: none; 
+    margin: -5px 0;
+    padding: 10px 21px;
+    /* border: 2px solid purple; */
+    border-radius: 10px;
+    font-size: 18px;
+    background: none;
+    font-weight: bold;
+}
+.BookButton:hover{
+    /* opacity: 0.5; */
+    color: black; 
+    background: white;   
+    box-shadow: 4px 6px rgb(204, 197, 197);
+}
+.Reset{
+    color: #060606b0;
+    cursor: pointer;
+    outline: none; 
+    margin: -5px 0;
+    padding: 10px 21px;
+    /* border: 2px solid purple; */
+    border-radius: 10px;
+    font-size: 18px;
+    background: none;
+    font-weight: bold;
+}
+.Reset:hover{
+    /* opacity: 0.5; */
+    color: black; 
+    background: white;   
+}
+#Button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 2%;
+    margin-bottom: 2%;
+}
   footer{
     background: black;
     color: white;
-    /* padding: 9px 20px; */
-    padding: 0%;
-    padding-bottom: 5%;
-    margin-top: 5%;
+    padding-bottom: 1%;
+    margin-top: 0%;
 }
 .center{
     padding-top: 2%;
     text-align: center;
     font-size: 1.5rem;
 }
-  
+@media screen and (max-width:1050px){
+    .center{
+        font-size: 2vw;
+    }
+}
   #AboutUs{
-      border: 2px solid white;
+      /* border: 2px solid white; */
       display: flex;
       /* background-color: rgba(128, 128, 128, 0.425); */
       background: url(Hotel/hotel4.jpg);
@@ -561,3 +894,190 @@ a{
     background: #125688;
     color: white;
   }
+
+
+
+  /* Sign Up Box  */
+  /* Full-width input fields */
+.modal input[type=text], .modal input[type=password] {
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  display: inline-block;
+  border: none;
+  background: #f1f1f1;
+}
+
+/* Add a background color when the inputs get focus */
+.modal input[type=text]:focus, .modal input[type=password]:focus {
+  background-color: #ddd;
+  outline: none;
+}
+
+/* Set a style for all buttons */
+.box1 button {
+  /* background-color: #04AA6D; */
+  /* color: white; */
+  background: transparent;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  /* opacity: 0.9; */
+}
+
+.box1 button:hover {
+  opacity:1;
+}
+
+/* Extra styles for the cancel button */
+.cancelbtn {
+  padding: 14px 20px;
+  background-color: #f44336;
+}
+.signupbtn{
+    padding: 14px 20px;
+    background-color: #5cf436;
+}
+
+/* Float cancel and signup buttons and add an equal width */
+.cancelbtn, .signupbtn {
+  float: left;
+  width: 50%;
+}
+
+/* Add padding to container elements */
+.container {
+  padding: 16px;
+}
+
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: #474e5d;
+  padding-top: 50px;
+}
+
+/* Modal Content/Box */
+.modal-content {
+  background-color: #fefefe;
+  margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
+  border: 1px solid #888;
+  width: 80%; /* Could be more or less, depending on screen size */
+}
+
+/* Style the horizontal ruler */
+hr {
+  border: 1px solid #f1f1f1;
+  margin-bottom: 25px;
+}
+ 
+/* The Close Button (x) */
+.close {
+  position: absolute;
+  right: 35px;
+  top: 15px;
+  font-size: 40px;
+  font-weight: bold;
+  color: #f1f1f1;
+}
+
+.close:hover,
+.close:focus {
+  color: #f44336;
+  cursor: pointer;
+}
+
+/* Clear floats */
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+/* Change styles for cancel button and signup button on extra small screens */
+@media screen and (max-width: 300px) {
+  .cancelbtn, .signupbtn {
+     width: 100%;
+  }
+}
+.container h1{
+    color: black;
+}
+.CompanyNameSignUp{
+    display: flex;
+    /* border: 2px solid black; */
+    padding:0;
+    width: 20%;
+}
+
+.CompanyNameSignUp h2{
+    margin-right: 2%;
+    font-size: 4rem;
+    font-family: 'UnifrakturMaguntia', cursive;
+    margin: 10px;
+    animation-name: OnH2;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+}
+@keyframes OnH2 {
+    0%{
+        color: red;
+       
+    }
+    20%{
+        color:rgb(0, 255, 42);
+
+    }
+    40%{
+       color: rgba(0, 140, 255, 0.822);
+    }
+    60%{
+       color: rgb(255, 0, 200);
+    }
+    80%{
+        color:blue;
+    }
+    100%{
+        color: cyan;
+    }
+}
+.CompanyNameSignUpe h3{
+    margin-right: 2%;
+    font-size: 3rem;
+    font-family: 'Montez', cursive;
+    margin: 0;
+    animation-name: OnH3;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+}
+@keyframes OnH3 {
+    0%{
+        color: red;
+       
+    }
+    20%{
+        color: chartreuse;
+
+    }
+    40%{
+       color: rgb(0, 174, 255);
+    }
+    60%{
+       color: cyan;
+    }
+    80%{
+        color: rgb(134, 0, 0);
+    }
+    100%{
+        color:blue;
+    }
+}

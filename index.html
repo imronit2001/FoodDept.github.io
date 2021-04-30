@@ -9,16 +9,16 @@
     <link href="https://fonts.googleapis.com/css2?family=Montez&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Baloo+Bhai|Bree+Serif&display=swap" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.gstatic.com">
-<link href="https://fonts.googleapis.com/css2?family=Redressed&display=swap" rel="stylesheet">
-<link rel="preconnect" href="https://fonts.gstatic.com">
-<link href="https://fonts.googleapis.com/css2?family=Ravi+Prakash&family=Redressed&display=swap" rel="stylesheet">
-<link href="https://fonts.googleapis.com/css2?family=Satisfy&display=swap" rel="stylesheet">
-<link href="https://fonts.googleapis.com/css2?family=Rock+Salt&display=swap" rel="stylesheet">
-<link href="https://fonts.googleapis.com/css2?family=Frijole&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-<link href="https://fonts.googleapis.com/css2?family=Charmonman&display=swap" rel="stylesheet">
-<link href="https://fonts.googleapis.com/css2?family=Vidaloka&display=swap" rel="stylesheet">
-
+    <link href="https://fonts.googleapis.com/css2?family=Redressed&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Ravi+Prakash&family=Redressed&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Satisfy&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Rock+Salt&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Frijole&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Charmonman&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Vidaloka&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="phone.css" media="screen and (max-width: 1030px)">
     <link rel="stylesheet" href="style.css">
     <title>Home</title>
 </head>
@@ -34,8 +34,9 @@
         <ul>
             <li class="item"><a href="#">Home</a></li>
             <li class="item"><a href="#alwaysTastyBurger">Services</a></li>
-            <li class="item"><a href="#AboutUs">About Us</a></li>
-            <li class="item"><a href="#">Contact Us</a></li> 
+            <li class="item"><a href="#BookTable">Book Table</a></li> 
+            <!-- <li class="item"><a href="#AboutUs">About Us</a></li> -->
+            <li class="item"><a href="#AboutUs">Contact Us</a></li> 
         </ul>
     </nav>
     <section>
@@ -55,10 +56,58 @@
                     <i class="fa fa-key"></i>
                     <input type="password" name="password" id="password" placeholder="Enter your password">
                 </div>
-                <button class="btn">Sign In</button>
                 <div class="box1">
-                    <p>or, <a href="SignUp.html" target="_blank">Create a New Acount</a></p>
+                <button class="btn">Sign In</button>
+
+                <!-- Sign Up Box  -->
+               
+                    <button class="btn" onclick="document.getElementById('id01').style.display='block'" >Sign Up</button>
                 </div>
+
+                <!-- Model  -->
+                <div id="id01" class="modal">
+                    <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+                    <form class="modal-content">
+                      <div class="container">
+                        <div class="CompanyNameSignUp">
+                            <h2>Ronit </h2>
+                            <h3> Food Plaza</h3>
+                        </div>
+                        <p>Please fill in this form to create an account.</p>
+                        <hr>
+                        <label for="email"><b>Email</b></label>
+                        <input type="text" placeholder="Enter Email" name="email" required>
+                  
+                        <label for="psw"><b>Password</b></label>
+                        <input type="password" placeholder="Enter Password" name="psw" required>
+                  
+                        <label for="psw-repeat"><b>Repeat Password</b></label>
+                        <input type="password" placeholder="Repeat Password" name="psw-repeat" required>
+                        
+                        <label>
+                          <input type="checkbox" checked="checked" name="remember" style="margin-bottom:15px"> Remember me
+                        </label>
+                  
+                        <p>By creating an account you agree to our <a href="#" style="color:dodgerblue">Terms & Privacy</a>.</p>
+                  
+                        <div class="clearfix">
+                          <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+                          <button type="submit" class="signupbtn">Sign Up</button>
+                        </div>
+                      </div>
+                    </form>
+                  </div>
+                  
+
+                
+                <!-- <div class="box1">
+                    <p>or, <a href="SignUp.html" target="_blank">Create a New Acount</a></p>
+                </div> -->
+
+
+
+
+
             </div>
             <div id="rightBox">
                 <img src="Burger/burger.jpg" alt="Burger">
@@ -109,8 +158,8 @@
                 </p>
                 <a href="https://online.kfc.co.in/menu?gclid=CjwKCAiAhbeCBhBcEiwAkv2cY_pvL8GRbUSg8vPjy9d2M9JZEFQ3pAzofEVAVoOBqAY22iM6NJEj_hoCiI4QAvD_BwE" target="_blank">Get Now</a>
             </div>
-        </div>
-        <div class="container3">
+        <!-- </div>
+        <div class="container3"> -->
             <div class="container3Box">
                 <img src="Burger/PlowBurger.jpg" alt="" width="100%" height="100%">
                 <h2>Plow Burger</h2>
@@ -149,19 +198,19 @@
             <div class="mySlides fade">
             <div class="numbertext">1 / 3</div>
             <img src="Hotel/hotelcover.jpg" style="width:100%">
-            <div class="text">Caption Text</div>
+            <div class="text">Outside View</div>
             </div>
         
             <div class="mySlides fade">
             <div class="numbertext">2 / 3</div>
             <img src="Hotel/hotel1.jpg" style="width:100%">
-            <div class="text">Caption Two</div>
+            <div class="text">Party View</div>
             </div>
         
             <div class="mySlides fade">
             <div class="numbertext">3 / 3</div>
             <img src="Hotel/hotel2.jpg" style="width:100%">
-            <div class="text">Caption Three</div>
+            <div class="text">Family Special Table</div>
             </div>
         
             <!-- Next and previous buttons -->
@@ -179,7 +228,62 @@
     </section>
     <section>
         <div class="BookTableContainer">
-
+            <h2 id="BookTable">Book Your Table</h2>
+            <table>
+                <tr>
+                    <th>Enter Your Name</th>
+                    <td><input type="text"></td>
+                </tr>
+                <tr>
+                    <th>Number of Members</th>
+                    <td><input type="number" name="" id=""></td>
+                </tr>
+                <tr>
+                    <th>Date of Booking</th>
+                    <td><input type="date" name="" id="date"></td>
+                </tr>
+                <tr>
+                    <th>Time of Booking</th>
+                    <!-- <td><input type="time"></td> -->
+                    <td><select name="cars" id="time">
+                        <option>11:00am</option>
+                        <option>11:30am</option>
+                        <option>12:00pm</option>
+                        <option>12:30pm</option>
+                        <option>01:00pm</option>
+                        <option>01:30pm</option>
+                        <option>02:00pm</option>
+                        <option>02:30pm</option>
+                        <option>03:00pm</option>
+                        <option>03:30pm</option>
+                        <option>04:00pm</option>
+                        <option>04:30pm</option>
+                        <option>05:00pm</option>
+                        <option>05:30pm</option>
+                        <option>06:00pm</option>
+                        <option>06:30pm</option>
+                        <option>07:00pm</option>
+                        <option>07:30pm</option>
+                        <option>08:00pm</option>
+                        <option>08:30pm</option>
+                        <option>09:00pm</option>
+                        <option>09:30pm</option>
+                      </select></td>
+                </tr>
+                <tr>
+                    <th>Contact</th>
+                    <td><input type="tel" name="" id=""></td>
+                </tr>
+                <tr id="Button">
+                    <td>
+                        <button class="BookButton">Book Now</button>
+                    </td>
+                    <td>
+                            <!-- <button class="Reset">Reset</button> -->
+                    </td>
+                </tr>
+            </table>
+            
         </div>
     </section>
     <footer>
@@ -210,11 +314,11 @@
                     <p>Open until 11:00 PM</p>
             </div>
             <div class="SocialLink">
-                <a href="#" class="fa fa-facebook"></a>
-                <a href="#" class="fa fa-twitter"></a>
-                <a href="#" class="fa fa-linkedin"></a>
-                <a href="#" class="fa fa-youtube"></a>
-                <a href="#" class="fa fa-instagram"></a>
+                <a href="https://www.facebook.com/ronitsinghrajput.11/" alt="Ronit Singh" class="fa fa-facebook"></a>
+                <a href="https://twitter.com/imronit1703" alt="Ronit Singh" class="fa fa-twitter"></a>
+                <a href="https://www.linkedin.com/in/ronit-singh-20b7901bb/" alt="Ronit Singh" class="fa fa-linkedin"></a>
+                <a href="https://www.youtube.com/channel/UCji8vSxnQgW-49AYhHaFRbg" alt="Ronit Singh" class="fa fa-youtube"></a>
+                <a href="https://www.instagram.com/ronitsinghrajput7/" alt="Ronit Singh" class="fa fa-instagram"></a>
             </div>  
         </div>
         <div class="center">
